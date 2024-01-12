@@ -1,0 +1,43 @@
+<% include ./partials/header.ejs %>
+
+<!-- Main content container -->
+<div class="w-full h-screen bg-zinc-300 flex items-center justify-center bg-zinc-300">
+  <!-- Registration form container -->
+  <div class="w-[28vw] bg-white px-20 py-10 rounded-[20px]">
+    <!-- Pinterest logo -->
+    <img class="mx-auto mb-2 w-20 h-20" src="https://static.vecteezy.com/system/resources/previews/018/930/468/original/pinterest-logo-pinterest-transparent-free-png.png" alt="Pinterest Image">
+
+    <!-- Registration form heading -->
+    <h1 class="text-3xl tracking-tight text-center capitalize font-semibold text-zinc-700 leading-none">Create new account</h1>
+
+    <!-- Registration form -->
+    <form action="/register" method="post">
+      <!-- Username input -->
+      <input class="border-2 rounded-md block mt-5 w-full px-3 py-2" type="text" name="username" placeholder="username">
+
+      <!-- Full name input -->
+      <input class="border-2 rounded-md block mt-2 w-full px-3 py-2" type="text" name="name" placeholder="full name">
+
+      <!-- Email input -->
+      <input class="border-2 rounded-md block mt-2 w-full px-3 py-2" type="email" name="email" placeholder="email">
+
+      <!-- Contact number input -->
+      <input class="border-2 rounded-md block mt-2 w-full px-3 py-2" type="number" name="contact" placeholder="contact">
+
+      <!-- Password input -->
+      <input class="border-2 rounded-md block mt-2 w-full px-3 py-2" type="password" name="password" placeholder="password">
+
+      <!-- Submit button -->
+      <input class="border-2 block mt-5 w-full px-3 py-2 bg-red-600 text-white rounded-full" type="submit" value="Create Account">
+
+      <!-- Terms of Service notice -->
+      <p class="text-sm font-semibold text-center text-zinc-700 w-5/6 mx-auto mt-3">By continuing, you agree to Pinterest's Terms of Service and acknowledge you've read our Notice at collection</p>
+    </form>
+
+    <!-- Link to login page -->
+    <a href="/" class="inline-block mt-7 text-sm font-semibold px-2 text-zinc-700 text-center w-full">Already have an account?</a>
+  </div>
+</div>
+
+<!-- Include footer partial -->
+<% include ./partials/footer.ejs %>
